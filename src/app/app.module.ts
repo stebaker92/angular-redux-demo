@@ -6,6 +6,7 @@ import createSagaMiddleware from '@redux-saga/core';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import { AppComponent } from './app.component';
+import { CatFactsComponent } from './cat-facts/cat-facts.component';
 import { rootReducer } from '../reducers/rootReducer';
 import { CounterActions } from 'src/app/actions/counter-actions';
 import { CounterComponent } from './counter/counter.component';
@@ -20,6 +21,7 @@ export interface IAppState {
   declarations: [
     AppComponent,
     CounterComponent,
+    CatFactsComponent
   ],
   imports: [
     BrowserModule,
